@@ -1,28 +1,32 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
 
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark static">
-                <div className="collapse navbar-collapse" id="navbarText">
-                    <ul className="navbar-nav custom-margin">
-                        <li className="nav-item">
-                            <Link className="nav-link" href="#work">My Projects <span className="sr-only">(current)</span></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link class="nav-link" href="#about-me">About Me</Link>
-                        </li>
-                        <li className="nav-item logo-home">
-                            <Link class="nav-link" href="#main"></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link class="nav-link custom-nav" href="#contact">Get in Contact</Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div className="dropdown" data-bs-theme="light">
+                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+                    Default dropdown
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                    <li><Link className="dropdown-item" href="#about">About</Link></li>
+                    <li><Link className="dropdown-item" href="#contact">Contact Me</Link></li>
+                    <li><Link className="dropdown-item" href="#projects">Projects</Link></li>
+                    <li><Link className="dropdown-item" href="#resume">Resume</Link></li>
+                </ul>
+            </div>
+
+            <div className="dropdown" data-bs-theme="dark">
+                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dark dropdown
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+                    <li><Link className="dropdown-item" href="#about">About</Link></li>
+                    <li><Link className="dropdown-item" href="#contact">Contact Me</Link></li>
+                    <li><Link className="dropdown-item" href="#projects">Projects</Link></li>
+                    <li><Link className="dropdown-item" href="#resume">Resume</Link></li>
+                </ul>
+            </div>
         </header>
     );
 }

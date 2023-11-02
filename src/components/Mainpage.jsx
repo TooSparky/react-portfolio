@@ -1,9 +1,7 @@
-import { useState, useEffect } from 'react';
-
 function Homepage() {
 
     return (
-        <main className="homepage">
+        <main id="homepage">
             <section id="main">
                 <div className="column">
                     <h1 className="brief-header"><span id="main-span">Zach Barnes Full Stack Developer</span></h1>
