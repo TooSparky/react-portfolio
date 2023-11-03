@@ -22,67 +22,48 @@ function Contact() {
 
     return (
         <section id="contact" className="">
-            <div className="">
-                <div className="">
+            <div className="whole-container">
+                <div className="contact-container">
                     <iframe
                         width="100%"
                         height="100%"
                         title="map"
-                        className=""
+                        className="contact-map"
                         style={{ filter: "opacity(0.7)" }}
                         src="https://www.google.com/maps/embed/v1/place?q=Lees+Summit,+MO,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                         />
-                    <div className="">
-                        <div className="">
-                            <h2 className="">
-                                Address
+                </div>            
+                    <div className="my-info-container">
+                        <div className="my-info">
+                            <h2 className="email-heading">
+                                My Email
                             </h2>
-                            <p className="">
-                                more address
-                            </p>
-                        </div>
-                        <div className="">
-                            <h2 className="">
-                                Email
-                            </h2>
-                            <Link href="" className="">
-                                actual email here
+                            <Link href="" className="my-email">
+                                16zacharybarnes@gmail.com
                             </Link>
-                            <h2 className="">
-                                Phone
-                            </h2>
-                            <p className="">phone number here</p>
                         </div>
                     </div>
-                </div>
-                <form name="contact" onSubmit={submitFormHandler} className="">
-                    <h2 className="">
-                        Hire Me
+                <form name="contact" onSubmit={submitFormHandler} className="contact-form">
+                    <h2 className="contact-heading">
+                        Something to Say?
                     </h2>
-                    <p className="">
-
+                    <p className="contact-text">
+                        Contact me!
                     </p>
-                    <div className="">
-                        <label htmlFor="name" className="">
-                            Name
-                        </label>
-                        <input type="text" id="name" name="name" className="" onChange={(event) => setName(event.target.value)} />
+                    <div className="user-name">
+                        <input placeholder='Name' type="text" id="name" name="name" className="contact-name" onChange={(event) => setName(event.target.value)} />
                     </div>
-                    <div className="">
-                        <label htmlFor="email" className="">
-                            Email
-                        </label>
-                        <input type="email" id="email" name="email" className="" onChange={(event) => setEmail(event.target.value)} />
+                    <div className="user-email">
+                        <input placeholder='Email' type="email" id="email" name="email" className="contact-email" onChange={(event) => setEmail(event.target.value)} />
                     </div>
-                    <div className="">
-                        <label htmlFor="message" className="">
-                            Message
-                        </label>
-                        <textarea name="message" id="message" className="" onChange={(event) => setMessage(event.target.value)} ></textarea>
+                    <div className="user-message">
+                        <textarea placeholder='Message' name="message" id="message" className="contact-message" onChange={(event) => setMessage(event.target.value)} ></textarea>
                     </div>
-                    <button type="submit" className="">
-                        Submit
-                    </button>
+                    <div className="user-submit">
+                        <button type="submit" className="contact-submit">
+                            Submit
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>

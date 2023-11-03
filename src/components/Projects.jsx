@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Projects() {
     return (
-        <section id="projects" className="">
+        <section id="projects">
             <div className="">
-                <div className="">
+                <div className="projects-text">
                     <h1 className="">
                         Apps I Built
                     </h1>
@@ -13,7 +13,7 @@ function Projects() {
                         More Text
                     </p>
                 </div>
-                <div className="">
+                <div className="projects-display">
                     {projects.map((project) => (
                         <Link href={project.link}
                         key={project.image}
