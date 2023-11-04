@@ -15,9 +15,20 @@
     background-color: black;
 }
 
+.social-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    margin-right: 15rem;
+}
+
+.nav-menu {
+    margin-left: 15rem;
+}
+
 #navbar li {
     list-style: none;
-    margin: 0 15rem;
 }
 
 #navbar a {
@@ -35,28 +46,6 @@
     color: #fff;
 }
 
-#navbar a:hover::after,
-#navbar a:focus::after {
-    opacity: 1;
-}
-
-#navbar .nav-item::after {
-    content: '';
-    background: rgb(0, 183, 255);
-    pointer-events: none;
-    transition: all 0.2s;
-    opacity: 0;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-}
-
-.active {
-    background-color: blueviolet;
-}
-
 /* Main Section */
 #main {
     height: 100vh;
@@ -70,6 +59,16 @@
     font-size: 5rem;
 }
 
+.name-span {
+    color: rgb(0, 183, 255);
+    background-image: linear-gradient(to left, rgb(0, 183, 255) 0%, rgb(167, 26, 255) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 /* About Me Section */
 #about {
     height: 100vh;
@@ -77,6 +76,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 7rem;
 }
 
 .column-1 {
@@ -103,6 +103,7 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 5px solid rgb(0, 183, 255);
 }
 
 /* Projects Section */
@@ -112,15 +113,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .projects-text {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+}
+
+.projects-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-p {
+    display: flex;
+    justify-content: center;
 }
 
 .projects-display {
+    border: 5px solid rgb(0, 183, 255);
+    padding: 2rem;
+}
 
+.projects-link {
+    text-decoration: none;
+    color: black;
+}
+
+.projects-link:hover {
+    color: gray;
 }
 
 /* Contact Me Section */
@@ -133,7 +156,7 @@
 }
 
 .whole-container {
-    border: 5px solid blue;
+    border: 5px solid rgb(0, 183, 255);
     border-radius: 1rem;
     width: 40%;
 }
@@ -159,7 +182,7 @@
     display: inline-block;
     text-align: center;
     padding: 1rem;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid rgb(0, 183, 255);
 }
 
 .contact-form {
@@ -171,6 +194,7 @@
 
 .my-email {
     text-decoration: none;
+    color: black;
 }
 
 .user-name {
@@ -245,9 +269,36 @@
 
 .back-to-top {
     text-decoration: none;
-    color: #fff;
     padding-top: 1rem;
     font-weight: bolder;
     font-size: 1.5rem;
+    color: gray;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all 0.4s;
+}
+
+.back-to-top:hover {
+    color: #fff;
+}
+
+.github-footer {
+    padding-left: 2rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    float: left;
+    padding: 0 1rem;
+    color: gray;
+    font-size: 1.3rem;
+    transition: all 0.4s;
+}
+
+.github-spacing {
+    padding-left: 2rem;
+}
+
+.github-footer:hover {
+    color: #fff;
 }
 
