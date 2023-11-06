@@ -182,7 +182,7 @@
     display: inline-block;
     text-align: center;
     padding: 1rem;
-    border-bottom: 5px solid rgb(0, 183, 255);
+    border-bottom: 3px solid rgb(0, 183, 255);
 }
 
 .contact-form {
@@ -239,7 +239,7 @@
 
 .contact-submit {
     border-radius: 0.5rem;
-    background-color: blue;
+    background-color: rgb(0, 183, 255);
     width: 6rem;
     height: 2rem;
     color: #fff;
